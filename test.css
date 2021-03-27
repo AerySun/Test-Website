@@ -1,0 +1,38 @@
+
+html,
+
+header {
+    font-size: 2em;
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content:right;
+
+}
+
+.text {
+    width: 50%;
+    color:black;
+
+}
+
+main .image img {
+    width: 60%;
+}
+
+main .image {
+    display: flex;
+}
+
+
+.TheHead {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+}
