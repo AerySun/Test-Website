@@ -1,38 +1,31 @@
-
 html,
-
 header {
-    font-size: 2em;
-    text-align: center;
+  font-size: 2em;
+  text-align: center;
 }
 main {
-    display: flex;
-    justify-content:right;
+  display: flex;
+  justify-content: right;
+}
 
+main .split {
+  width: 50%;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .text {
-    width: 50%;
-    color:black;
-
+  
 }
 
-main .image img {
-    width: 60%;
-}
-
-main .image {
-    display: flex;
-}
-
-
-.TheHead {
-    display: flex;
-    justify-content: space-between;
-}
 
 nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 1em;
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+}
+
+span.title {
+  font-size: 2em;
+
 }
