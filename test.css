@@ -14,11 +14,6 @@ main .split {
   flex-flow: column nowrap;
 }
 
-.text {
-  
-}
-
-
 nav a {
   text-decoration: none;
   color: black;
@@ -27,5 +22,4 @@ nav a {
 
 span.title {
   font-size: 2em;
-
 }
