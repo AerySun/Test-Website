@@ -15,11 +15,24 @@ main .split {
 }
 
 nav a {
+  background-color: #f7c5c5;
   text-decoration: none;
-  color: black;
+  color: white;
   font-size: 2em;
+  line-height: 1rem;
+  display: flex;
+  flex-direction: row;
 }
 
 span.title {
+  line-height: 2rem;
   font-size: 2em;
+  text-decoration: underline;
+  color: white;
+  background-color:#f7c5c5;
+}
+
+span.textright {
+  display: flex;
+  
 }
