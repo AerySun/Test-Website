@@ -1,22 +1,18 @@
+* {
+  box-sizing: border-box;
+}
 html,
 header {
   font-size: 2rem;
   display: flex;
   width: 100%;
+  
 }
 body {
   margin: 0;
-}
-main {
-  display: flex;
-  justify-content: right;
+  width: 100%;
 }
 
-main .split {
-  width: 50%;
-  display: flex;
-  flex-flow: column nowrap;
-}
 nav {
   text-align: end; 
   width: 100%;
@@ -37,6 +33,7 @@ nav a {
 }
 
 span.title {
+  font-size: 2rem;
   padding: 0 1rem;
   text-decoration: underline;
   color: white;
@@ -48,3 +45,4 @@ span.title {
     rgba(121, 9, 92, 1) 100%
   );
 }
+  
