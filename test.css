@@ -48,3 +48,7 @@ span.title {
     rgba(121, 9, 92, 1) 100%
   );
 }
+
+.list {
+  list-style-type: upper-roman;
+}
