@@ -16,15 +16,13 @@ body {
 nav {
   text-align: end; 
   width: 100%;
-  background: rgb(121, 9, 92);
-  background: linear-gradient(
-    90deg,
-    rgba(121, 9, 92, 1) 0%,
-    rgba(2, 0, 36, 1) 100%
+  background: rgb(127,124,166);
+  background: linear-gradient(90deg, rgba(127,124,166,1) 0%, rgba(121,9,92,1) 100%);
   );
 }
 
 nav a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 1.2rem;
   padding: 0 1rem;
@@ -33,16 +31,14 @@ nav a {
 }
 
 span.title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
   padding: 0 1rem;
   text-decoration: underline;
   color: white;
-  /* background-color:#f7c5c5; */
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(121, 9, 92, 1) 100%
+  background: rgb(127,124,166);
+
+  
   );
 }
   
