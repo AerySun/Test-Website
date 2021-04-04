@@ -53,3 +53,7 @@ span.title {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   list-style-type: upper-roman;
 }
+
+img {
+  margin-top: 1.2rem;
+}
