@@ -1,34 +1,29 @@
+const results = {
+  wins: 0,
+  draws: 0,
+  losses: 0
+}
 
-const schere = document.getElementById("Schere")
-const stein = document.getElementById("Stein")
-const papier = document.getElementById("Papier")
-const game2 = [schere, stein, papier]
+const outcomes = {
+  Schere: 'Papier',
+  Stein: 'Schere',
+  Papier: 'Stein'
+}
 
-//Zufallsprinzip
-const min = 1
-const max = 4
-//const zufall = Math.floor (Math.random() * (max - min +1 )) +min
+const choices = ['Schere', 'Stein', 'Papier']
 
-schere.addEventListener('click', () => {
-  stein.checked = false
-  papier.checked = false
-})
-
-stein.addEventListener('click', () => {
-  schere.checked = false
-  papier.checked = false
-})
-
-papier.addEventListener('click', () => {
-  schere.checked = false
-  stein.checked = false
-})
-
-const playbutton = document.getElementById('playbutton')
-let wincounter = 0
-let losecounter = 0
-const wins = document.getElementById('wincounter')
-const loses = document.getElementById('losecounter')
-playbutton.addEventListener('click', () => {
-
+function playGame () {
+  const ownChoice = document.querySelector('input[name="abc"]:checked').id
+  const computerChoice = _.sample(choices)
+  console.log(ownChoice, computerChoice)
+  if (ownChoice === computerChoice) {
+    results.draws++
+  } else if (outcomes[ownChoice] === computerChoice) {
+    results.wins++
+  } else {
+    results.losses++
+  }
+  for (const [key, value] of Object.entries(results)) {
+    document.querySelector(`#counter_${key}`).innerHTML = value
+  }
 }
