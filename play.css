@@ -7,3 +7,12 @@ h1 {
 .mitte {
     text-align: center;
 }
+
+.playButton {
+    padding-top: 1rem;
+    
+}
+
+.newGame {
+    padding-top: .2rem;
+}

@@ -3,9 +3,8 @@
 <head>
   <title>My Test place</title>
   <link rel="stylesheet" href="global.css" />
-  <link rel="stylesheet" href="play.css">
+  <link rel="stylesheet" href="play.css" />
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
- 
 </head>
 
 <body>
@@ -19,23 +18,19 @@
   </header>
   <h1>Schere Stein Papier</h1>
   <div class="mitte">
-    <input class="toggle" type="radio" name="abc" id="Schere">
+    <input class="toggle" type="radio" name="abc" id="Schere" />
     <label>Schere</label>
-    <input class="toggle" type="radio" name="abc" id="Stein">
+    <input class="toggle" type="radio" name="abc" id="Stein" />
     <label for="input">Stein</label>
-    <input class="toggle" type="radio" name="abc" id="Papier">
-    <label for="toggle">Papier</label> 
-    <br> 
-    <br>
-    <button id="playbutton" onclick="playGame()">Play</button>
-    <br>
-    <br>
+    <input class="toggle" type="radio" name="abc" id="Papier" />
+    <label for="toggle">Papier</label>
+    <div class="playButton">
+      <button id="playbutton" onclick="playGame()">Play</button>
+    </div>
     <p>Wins <span id="counter_wins">0</span></p>
     <p>Draws <span id="counter_draws">0</span></p>
     <p>Loses <span id="counter_losses">0</span></p>
-    <br>
-    <br>
-    <button id="newgame">Start a new game</button>
-</div>
-<script lang="javascript" src="play.js"></script>
+    <button id="newgame" onclick="newGame()">Start a new game</button>
+  </div>
+  <script lang="javascript" src="play.js"></script>
 </body>

@@ -27,3 +27,8 @@ function playGame () {
     document.querySelector(`#counter_${key}`).innerHTML = value
   }
 }
+
+const newgame = document.getElementById('newGame')
+newgame.addEventListener('click', () => {
+  HELP ME !!!!
+})
