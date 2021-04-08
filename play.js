@@ -12,8 +12,10 @@ const outcomes = {
 
 const choices = ['Schere', 'Stein', 'Papier']
 
-function playGame () {
+function playGame() {
+  //document.querySelector() returns the first Element within the document that matches the specific selector
   const ownChoice = document.querySelector('input[name="abc"]:checked').id
+  //pick a random element from the choices array
   const computerChoice = _.sample(choices)
   console.log(ownChoice, computerChoice)
   if (ownChoice === computerChoice) {
@@ -23,12 +25,18 @@ function playGame () {
   } else {
     results.losses++
   }
+  refreshScoreboard()
+}
+
+function refreshScoreboard() {
   for (const [key, value] of Object.entries(results)) {
     document.querySelector(`#counter_${key}`).innerHTML = value
   }
 }
 
-const newgame = document.getElementById('newGame')
 newgame.addEventListener('click', () => {
-  HELP ME !!!!
+  results.wins = 0
+  results.draws = 0
+  results.losses = 0
+  refreshScoreboard()
 })
