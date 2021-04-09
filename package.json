@@ -1,0 +1,25 @@
+{
+  "name": "test-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "play.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AerySun/Test-Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AerySun/Test-Website/issues"
+  },
+  "homepage": "https://github.com/AerySun/Test-Website#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.11"
+  }
+}

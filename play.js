@@ -1,3 +1,5 @@
+import { sample } from 'lodash'
+
 const results = {
   wins: 0,
   draws: 0,
@@ -12,11 +14,11 @@ const outcomes = {
 
 const choices = ['Schere', 'Stein', 'Papier']
 
-function playGame() {
-  //document.querySelector() returns the first Element within the document that matches the specific selector
+function playGame () {
+  // document.querySelector() returns the first Element within the document that matches the specific selector
   const ownChoice = document.querySelector('input[name="abc"]:checked').id
-  //pick a random element from the choices array
-  const computerChoice = _.sample(choices)
+  // pick a random element from the choices array
+  const computerChoice = sample(choices)
   console.log(ownChoice, computerChoice)
   if (ownChoice === computerChoice) {
     results.draws++
@@ -28,15 +30,19 @@ function playGame() {
   refreshScoreboard()
 }
 
-function refreshScoreboard() {
+function refreshScoreboard () {
   for (const [key, value] of Object.entries(results)) {
     document.querySelector(`#counter_${key}`).innerHTML = value
   }
 }
 
-newgame.addEventListener('click', () => {
+document.getElementById('newgame').addEventListener('click', () => {
   results.wins = 0
   results.draws = 0
   results.losses = 0
   refreshScoreboard()
+})
+
+document.getElementById('playbutton').addEventListener('click', () => {
+  playGame()
 })
