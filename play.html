@@ -17,7 +17,7 @@
     </nav>
   </header>
   <h1>Schere Stein Papier</h1>
-  <div class="mitte">
+  <div class="mid">
     <input class="toggle" type="radio" name="abc" id="Schere" />
     <label>✂️Schere</label>
     <input class="toggle" type="radio" name="abc" id="Stein" />
@@ -27,9 +27,13 @@
     <div class="playButton">
       <button id="playbutton">Play</button>
     </div>
-    <p>Wins <span id="counter_wins">0</span></p>
-    <p>Draws <span id="counter_draws">0</span></p>
-    <p>Loses <span id="counter_losses">0</span></p>
+    <div class="results">
+      <span class="resu">
+        <p>Wins <span id="counter_wins">0</span></p>
+        <p>Draws <span id="counter_draws">0</span></p>
+        <p>Loses <span id="counter_losses">0</span></p>
+      </span>
+    </div>
     <button id="newgame">Start a new game</button>
   </div>
   <script lang="javascript" src="./play.js"></script>
