@@ -18,7 +18,26 @@ h1 {
 }
 
 .results {
+    display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
     
+}
+
+.resu {
+    border-radius: .4rem;
+    background-color:hsl(0, 0%, 95%);
+    width: 25%;
+    margin: 1%;
+}
+
+label {
+    font-size: 70px;
+}
+
+input[type="radio"]{
+    display: none;
 }
 
 /*# sourceMappingURL=/play.2b9fede1.css.map */

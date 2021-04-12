@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+html,
+header {
+  font-size: 2rem;
+  display: flex;
+  width: 100%;
+  
+}
+body {
+  margin: 0;
+  width: 100%;
+}
+
+nav {
+  text-align: end; 
+  width: 100%;
+  background: rgb(127,124,166);
+background: linear-gradient(90deg, rgba(127,124,166,1) 0%, rgba(173,119,159,1) 100%);
+
+}
+
+nav a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+span.title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  padding: 0 1rem;
+  text-decoration: underline;
+  color: white;
+  background: rgb(127,124,166);
+
+}
+  
+
+/*# sourceMappingURL=/global.e50bbfba.css.map */

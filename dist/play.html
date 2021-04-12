@@ -19,19 +19,21 @@
   <h1>Schere Stein Papier</h1>
   <div class="mid">
     <input class="toggle" type="radio" name="abc" id="Schere">
-    <label>✂️Schere</label>
+    <label for="Schere">✂️</label>
     <input class="toggle" type="radio" name="abc" id="Stein">
-    <label for="input">💎Stein</label>
+    <label for="Stein">💎</label>
     <input class="toggle" type="radio" name="abc" id="Papier">
-    <label for="toggle">📜Papier</label>
+    <label for="Papier">📜</label>
     <div class="playButton">
       <button id="playbutton">Play</button>
     </div>
     <div class="results">
-    <p>Wins <span id="counter_wins">0</span></p>
-    <p>Draws <span id="counter_draws">0</span></p>
-    <p>Loses <span id="counter_losses">0</span></p>
-  </div>
+      <span class="resu">
+        <p>Wins <span id="counter_wins">0</span></p>
+        <p>Draws <span id="counter_draws">0</span></p>
+        <p>Loses <span id="counter_losses">0</span></p>
+      </span>
+    </div>
     <button id="newgame">Start a new game</button>
   </div>
   <script lang="javascript" src="/play.44188bc7.js"></script>

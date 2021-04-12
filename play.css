@@ -32,6 +32,10 @@ h1 {
     margin: 1%;
 }
 
-.labl {
+label {
     font-size: 70px;
+}
+
+input[type="radio"]{
+    display: none;
 }
