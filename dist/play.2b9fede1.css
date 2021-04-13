@@ -34,6 +34,12 @@ h1 {
 
 label {
     font-size: 70px;
+    cursor: pointer;
+}
+
+label:hover {
+    opacity: 1;
+    filter: brightness(50%);
 }
 
 input[type="radio"]{
