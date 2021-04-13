@@ -38,12 +38,16 @@ label {
 }
 
 label:hover {
-    opacity: 1;
-    filter: brightness(50%);
+    opacity: 0.8;
+    /* filter: brightness(120%); */
 }
 
 input[type="radio"]{
     display: none;
+}
+
+input:checked + label {
+    text-shadow: 0 0 0.5rem black;
 }
 
 /*# sourceMappingURL=/play.2b9fede1.css.map */
