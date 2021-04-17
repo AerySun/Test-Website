@@ -1,0 +1,58 @@
+html,
+body {
+  margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: lightgrey;
+    width: 100%;
+    padding: 1rem;
+}
+
+header .title {
+    display: flex;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+nav a {
+    display: block;
+    padding: 0 2rem;
+    text-decoration: none;
+    line-height: 2rem;
+    color: black;
+}
+
+nav a:hover {
+    background-color: hsl(0, 0%, 80%);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
