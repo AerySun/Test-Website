@@ -22,7 +22,7 @@ function playGame () {
   console.log(ownChoice, computerChoice)
   if (ownChoice === computerChoice) {
     results.draws++
-  } else if (outcomes[ownChoice] === computerChoice) {//
+  } else if (outcomes[ownChoice] === computerChoice) {
     results.wins++
   } else {
     results.losses++
