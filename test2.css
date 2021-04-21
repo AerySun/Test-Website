@@ -16,15 +16,15 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    background-color: lightgrey;
+    background-color: hsl(207, 30%, 70%);
     width: 100%;
-    padding: 1rem;
 }
 
 header .title {
     display: flex;
     font-size: 2rem;
     text-decoration: underline;
+    padding: 1rem;
 }
 
 .wrapper {
@@ -42,10 +42,11 @@ nav {
 
 nav a {
     display: block;
-    padding: 0 2rem;
+    padding: 1rem 2rem;
     text-decoration: none;
     line-height: 2rem;
     color: black;
+    font-weight: 300;
 }
 
 nav a:hover {
