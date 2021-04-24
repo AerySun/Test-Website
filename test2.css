@@ -16,20 +16,33 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    background-color: hsl(207, 30%, 70%);
+    background-color: black;
     width: 100%;
 }
 
+.resize {
+    width: 70px;
+    height: 60px;
+}
+
+form {
+    height: 10%;
+    /* margin: 0 1rem; */
+    padding: 0 .5rem;
+}
+
 header .title {
+    color: white;
     display: flex;
     font-size: 2rem;
     text-decoration: underline;
     padding: 1rem;
+    font-weight: bold;
 }
 
 .wrapper {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     width: 100%;
     
@@ -45,15 +58,19 @@ nav a {
     padding: 1rem 2rem;
     text-decoration: none;
     line-height: 2rem;
-    color: black;
+    color: white;
     font-weight: 300;
 }
 
 nav a:hover {
-    background-color: hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 70%);
 }
 
 main {
     display: flex;
     flex-direction: column;
+}
+
+img {
+    background-color: black;
 }
