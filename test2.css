@@ -60,7 +60,13 @@ nav a {
     line-height: 2rem;
     color: white;
     font-weight: 300;
-    font-style: italic;
+}
+
+.emojis {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    justify-items: right;
 }
 
 nav a:hover {
