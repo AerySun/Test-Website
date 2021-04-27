@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <head>
   <title>test2</title>
   <link rel="stylesheet" href="test2.css" />
@@ -7,26 +9,29 @@
 <body>
   <header>
     <div class="wrapper">
-      <img class="resize" src="Gitcat.png" alt="Github Cat">
-      <form action="">
-        <label for="search"></label>
-        <input type="text" name="search" placeholder="Search or jump to..." ></form>
-        <nav>
+      <img class="resize" src="./gitcat.png" alt="Github Cat">
+      <input type="search" name="search" placeholder="Search or jump to...">
+      <nav>
+        <div class="left-side">
           <a href="#">Pull requests</a>
           <a href="#">Issues</a>
           <a href="#">Marketplace</a>
           <a href="#">Explore</a>
-          <div class="right-side">
-          <a href="#">🔔</a>
-          <a href="#">➕ &#x25BE</a>
         </div>
-        </nav>
+        <div class="right-side">
+          <a href="#">🔔</a>
+          <a href="#">➕ &#x25BE;</a>
+          <a href="#menu" class="arrow-wrapper">
+            <img class="avatar" src="./profile.png" alt="Profile Picture">
+            <div class="arrow">&#x25BE;</div>
+          </a>
+          <div class="menu" id="menu"></div>
+        </div>
+      </nav>
     </div>
   </header>
 
   <main>
-    <span class="text">
-      <p></p>
-    </span>
+    <hr>
   </main>
 </body>
