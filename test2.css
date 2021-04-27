@@ -16,7 +16,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    background-color: black;
+    background-color: rgb(34, 34, 39);
     width: 100%;
 }
 
@@ -50,7 +50,7 @@ header .title {
 
 nav {
     display: flex;
-    justify-content: right;
+    /* justify-content: right; */
 }
 
 nav a {
@@ -62,11 +62,19 @@ nav a {
     font-weight: 300;
 }
 
-.emojis {
+p {
+    cursor: pointer;
+}
+
+.right-side {
     display: flex;
-    justify-content: right;
     align-items: center;
-    justify-items: right;
+    
+    
+}
+
+input[type="button"]{
+    display: none;
 }
 
 nav a:hover {
