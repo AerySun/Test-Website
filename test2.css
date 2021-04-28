@@ -145,7 +145,8 @@ main {
 }
 
 main hr {
-    width: 100%;
+    padding: 2rem;
+    width: 50%;
     margin-top: 5rem;
     opacity: .1;
     border: none;
@@ -161,5 +162,6 @@ ul p {
     color: white;
     font-size: 14px;
     font-weight: 450;
+    
 }
 
