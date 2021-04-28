@@ -121,6 +121,15 @@ input[type="search"]:focus{
     width: 400px;
 }
 
+input[type="search2"]{
+    appearance: none;
+    background-color: rgb(14, 14, 20);
+    border-radius: .33rem;
+    border-color: rgba(255, 255, 255, 0.157);
+    width: 200px;
+    height: 30px;
+}
+
 input[type="button"]{
     display: none;
 }
@@ -154,7 +163,3 @@ ul p {
     font-weight: 450;
 }
 
-.search2 {
-    opacity: .4;
-    border: none;
-}
