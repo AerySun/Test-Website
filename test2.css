@@ -147,3 +147,14 @@ img {
     object-fit: contain;
     padding: .75rem;
 }
+
+ul p {
+    color: white;
+    font-size: 14px;
+    font-weight: 450;
+}
+
+.search2 {
+    opacity: .4;
+    border: none;
+}
