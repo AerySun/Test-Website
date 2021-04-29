@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    height: 100vh;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -20,6 +21,7 @@ header {
     flex-direction: row;
     background-color: rgb(29, 30, 39);
     width: 100%;
+    height: 4rem;
 }
 
 .resize {
@@ -82,14 +84,13 @@ nav a:first-child {
     color: white;
 }
 
-.menu {
+header .menu {
     padding: 3rem;
     background-color: white;
     display: none;
-}
-
-.menu:target {
-    display: block;
+    position: absolute;
+    top: 4rem;
+    right: 0;
 }
 
 .left-side {
@@ -100,10 +101,9 @@ nav a:first-child {
 .right-side {
     display: flex;
     align-items: center;
-    /* margin-left: auto;   */
 }
 
-input[type="search"]{
+header input[type="search"]{
     appearance: none;
     background-color: rgb(19, 18, 18);
     border: none;
@@ -113,21 +113,27 @@ input[type="search"]{
     transition: width .25s ease-in-out;
 }
 
-input[type="search"]::placeholder{
+header input[type="search"]::placeholder{
     color: rgba(255, 255, 255, 0.726);
 }
 
-input[type="search"]:focus{
+header input[type="search"]:focus{
     width: 400px;
 }
 
-input[type="search2"]{
+aside input[type="search"]{
     appearance: none;
     background-color: rgb(14, 14, 20);
     border-radius: .33rem;
     border-color: rgba(255, 255, 255, 0.157);
-    width: 200px;
+    width: 100%;
     height: 30px;
+}
+
+aside input[type="search"]:focus{
+    box-shadow: 0 0 .2rem .2rem rgb(25, 140, 218);
+    outline: none;
+    
 }
 
 input[type="button"]{
@@ -140,17 +146,39 @@ nav a:hover {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+    height: 100%;
 }
 
-main hr {
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background: rgb(8, 8, 19);
+    border-right: 1px solid rgba(255, 255, 255, 0.157);
+    color: white;
     padding: 2rem;
-    width: 50%;
-    margin-top: 5rem;
-    opacity: .1;
-    border: none;
-    border-bottom: 1px solid white;
+}
+
+aside .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+aside .menu .button {
+    text-decoration: none;
+    color: white;
+    background: rgb(50, 158, 50);
+    padding: .25rem .5rem;
+    border-radius: .4rem;
+    font-size: .9rem;
+}
+
+section {
+    flex-grow: 1;
 }
 
 img {
@@ -158,10 +186,4 @@ img {
     padding: .75rem;
 }
 
-ul p {
-    color: white;
-    font-size: 14px;
-    font-weight: 450;
-    
-}
 
