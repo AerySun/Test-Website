@@ -8,7 +8,7 @@ body * {
 }
 
 body {
-    background-color: rgb(13, 13, 19);
+    background-color: rgb(10, 13, 17);
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -19,7 +19,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    background-color: rgb(18, 25, 34);
+    background-color: #151820;;
     width: 100%;
     height: 4rem;
 }
@@ -42,7 +42,7 @@ img {
 
 header input[type="search"]{
     appearance: none;
-    background-color: rgb(18, 18, 22);
+    background-color: rgb(18, 19, 22);
     border: none;
     border-radius: .33rem;
     padding: .4rem;
@@ -111,12 +111,12 @@ nav a:first-child {
 }
 
 header .menu {
-    padding: 3rem;
-    background-color: white;
+    padding: 10rem 5rem;
+    background-color: rgb(20, 21, 27);
     display: none;
     position: absolute;
     top: 4rem;
-    right: 0;
+    right: .0rem;
 }
 
 .left-side {
@@ -140,7 +140,7 @@ aside {
     display: flex;
     flex-direction: column;
     width: 350px;
-    background: rgb(19, 19, 26);
+    background: rgb(14, 18, 24);
     border-right: 1px solid rgba(255, 255, 255, 0.157);
     color: white;
     padding: 2rem;
