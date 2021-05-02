@@ -243,6 +243,62 @@ section {
     flex-grow: 1;
 }
 
+aside.right {
+    background-color: inherit;
+    /* border-left: 1px solid gray; */
+}
 
+aside.right >.title {
+    font-size: .9rem;
+    color: rgb(180, 179, 179);
+}
 
+.repos {
+    display: flex;
+    flex-direction: column;
+}
 
+.repos .repo:not(:last-child) {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.424);
+    
+}
+
+.repos .repo {
+    padding: 1rem 0;
+    font-size: .9rem;
+    color: rgb(149, 149, 149);
+}
+
+.repos .repo .title {
+    color: white;
+}
+
+.repos .repo .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    line-height: 1.2rem;
+    vertical-align: middle;
+    margin-top: 1rem;
+    /* gap: 1rem; */
+}
+
+.repos .repo .info .language-color {
+    width: .75rem;
+    height: .75rem;
+    background: white;
+    border-radius: 50%;
+    margin-right: .2rem;
+}
+
+.repos .repo .info .language-color-java {
+    background-color: rgb(185, 136, 44);
+}
+ 
+.repos .repo .info .stars {
+    margin-left: 1rem;
+}
+
+.repos .repo .info .stars::first-letter {
+    font-size: 1.2rem;
+}
