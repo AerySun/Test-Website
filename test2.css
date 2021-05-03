@@ -295,12 +295,29 @@ aside.right >.title {
     background-color: rgb(185, 136, 44);
 }
  
+.repos .repo .info .language-python {
+    background-color: red;
+}
 .repos .repo .info .stars {
     margin-left: 1rem;
 }
 
 .repos .repo .info .stars::first-letter {
     font-size: 1.3rem;
+}
+
+main .explore {
+    margin-top: 1rem;
+}
+
+main .explore a{
+    color: rgb(149, 149, 149);
+    text-decoration: none;
+    font-size: .8rem;
+}
+
+main .explore a:hover{
+    color: rgb(80, 153, 195);
 }
 
 section hr {
