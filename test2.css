@@ -357,7 +357,41 @@ main section .time {
 }
 
 section hr {
-    margin-top: 6rem;
+    margin-top: 1rem;
     opacity: .1;
     
+}
+
+main section .boxWrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem;
+    border: 1px solid rgba(255, 255, 255, 0.137);
+    border-radius: .33rem;
+    padding: .9rem;
+    background-color: rgb(14, 18, 24);;
+}
+
+main section .boxWrapper .language-name{
+    color: rgba(255, 255, 255, 0.486);
+    font-size: .8rem;
+    padding-top: .8rem;
+}
+
+main section .boxLink {
+    text-decoration: none;
+    color: rgb(211, 208, 208);
+    font-weight: bold;
+    font-size: .95rem;
+}
+
+main section .boxText {
+    color: rgba(211, 210, 210, 0.644);
+    font-size: .9rem;
+    padding-top: .5rem;
+}
+
+.row-wrapper {
+    display: flex;
+    flex-direction: row;
 }
