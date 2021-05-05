@@ -391,7 +391,27 @@ main section .boxText {
     padding-top: .5rem;
 }
 
+main section .languageName {
+    color: rgb(172, 172, 172);
+    font-size: .9rem;
+}
+
+main section .stars {
+    color: rgb(167, 165, 165);
+    font-size: .9rem;
+    margin-left: .75rem;
+    margin-right: .75rem;
+}
+
+main section .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .row-wrapper {
     display: flex;
     flex-direction: row;
+    margin-top: .5rem;
 }
