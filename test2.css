@@ -415,3 +415,19 @@ main section .time {
     flex-direction: row;
     margin-top: .5rem;
 }
+
+main section .wrapperinwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main section button {
+    border: 1px solid rgba(255, 255, 255, 0.096);
+    border-radius: .33rem;
+    background-color: rgb(38, 42, 53);
+    color: rgb(189, 189, 189);
+    cursor: pointer;
+    padding: .17rem .9rem;
+    font-weight: bold;
+}
